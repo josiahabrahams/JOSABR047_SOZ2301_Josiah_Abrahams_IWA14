@@ -8,9 +8,12 @@ function internal() {
     this.internal.a=2
 	this.internal.b=4
 	this.internal.c=6
+	if(this===example1){
 	const added = this.add(this.internal.a, this.internal.b, this.internal.c);
-    const multiplied = this.multiply(this.internal.a, this.internal.b, this.internal.c);
-    return this;
+    } else{
+	const multiplied = this.multiply(this.internal.a, this.internal.b, this.internal.c);
+    }
+	return this;
   }
 
 // Not allowed to change below this
