@@ -9,9 +9,9 @@ function internal() {
 	this.internal.b=4
 	this.internal.c=6
 	if(this===example1){
-	const added = this.add(this.internal.a, this.internal.b, this.internal.c);
+ const multiplied = this.multiply(this.internal.a, this.internal.b, this.internal.c);	
     } else{
-	const multiplied = this.multiply(this.internal.a, this.internal.b, this.internal.c);
+	const added = this.add(this.internal.a, this.internal.b, this.internal.c);
     }
 	return 
   }
