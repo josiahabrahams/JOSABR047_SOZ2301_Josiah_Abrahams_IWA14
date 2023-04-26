@@ -5,7 +5,10 @@ function add  (a,b,c)  { return console.log(a+b+c) }
 function multiply  (a,b,c)  { return console.log(a*b*c)}
 
 function internal() {
-    const added = this.add(this.internal.a, this.internal.b, this.internal.c);
+    this.internal.a=2
+	this.internal.b=4
+	this.internal.c=6
+	const added = this.add(this.internal.a, this.internal.b, this.internal.c);
     const multiplied = this.multiply(this.internal.a, this.internal.b, this.internal.c);
     return this;
   }
