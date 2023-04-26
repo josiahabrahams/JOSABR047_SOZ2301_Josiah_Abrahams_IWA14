@@ -13,7 +13,7 @@ function internal() {
     } else{
 	const multiplied = this.multiply(this.internal.a, this.internal.b, this.internal.c);
     }
-	return this;
+	return 
   }
 
 // Not allowed to change below this
